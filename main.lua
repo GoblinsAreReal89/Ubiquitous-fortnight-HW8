@@ -4,7 +4,7 @@ require("L5")
 
 
 function setup()
-  size(500, 500)
+  size(800, 800)
   windowTitle('setup example')
 
   background(200)
