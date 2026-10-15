@@ -14,17 +14,33 @@ function setup()
 
   describe('A white circle on a gray background.')
   Blueish = color(0,0,255)
+  --Redish = color(255, 0, 0)
+  --Greenish = color(0, 255, 0)
+  --Blueish = color(0, 0, 255)
 
 end
 
 --PizzaToppingsCode = {1, 2, 3}
-PizzaToppingsKey = {"Pepperoni", "Pineapple", "Peppers", "Sausage", "Funny Anchovy", }
-SizeText = {"Personal", "Small", "Regular", "Large", "X-Large"} 
---Redish = color(255, 0, 0)
---Greenish = color(0, 255, 0)
---Blueish = color(0, 0, 255)
+PhylumsArrayText = {"Mollusa", "Echinodermata", "Vertebrata", "Arthropoda"}
+PhylumsArrayNested = {MolluscaExtended, EchinodermsExtended, VertebratesExtended, ArthropodsExtended}
+MolluscaExtended = {"Whelk", "Snail", "Slug", "Squid", "Octopus", "Shellfish", "Oyster", "Scallop"}
+EchinodermsExtended = {"Sea Star", "Brittle Star", "Urchin", "Sea Cucumber", "Sand Dollar", "Sea Lilly", "Feather Stars"}
+VertebratesExtended = {"Frog", "Toad", "Shark", "Elephant", "Deer", "Lion", "Anteater", "Gecko", "Owl", 
+"Mouse", "Turkey", "Human", "Trout", "Salmon", "Bear", "Wolf", "Dog", "Cat", "Rabbit", "Squirrel", "Vulture", "Condor", "Pidgeon"}
+ArthropodsExtended = {"Ant", "Termite", "Spider", "Centipede", "Milipede", "Scorpion", "Beetle", "Fly", 
+"Cockroach", "Bee", "Hornet", "Mosquito", "Dragonfly", "Earwig", "Flea", "Grasshopper", "Locust", "Lightningbug", "Antlion", 
+"Mite", "Aphid", "Louse", "Butterfly", "Gnat", "Ladybug" }
+AdjectivesArray = {'foul', 'evil', 'intimidating', 'cunning', 'short', 'squishy', 'heoric', 'benevolent', 
+'crafty', 'fickle', 'tricky', 'furtive', 'wise', 'humble', 'oblivious', 'attentive','sensitive','empathetic',
+'feeble','burly','smelly','pristine','corrupt','humorous','mirthful','catastrophic','feminine','masculine',
+'genderless','genderful','hairy','hairless','liquid','solid','gaseous','watchful','plasmatic','prismastic','molten',
+'hideous','exquisite','spectacular','miraculous','curly','arrow-like','orderly','chaotic','charismatic','dogmatic','dexterous',
+'highly-educated','accusitory','scrappy','abscent'}
+
+
+
 TempVariableGummy = 0 
-round(random(1,3.99))
+round(random(1,34,1))
 PepperOutcomes = 0
 PineOutcomes = 0
 PeppOutcomes = 0
@@ -34,13 +50,13 @@ PizzaToppingsOutcomes = {PeppOutcomes,PineOutcomes,PepperOutcomes}
 
 function mousePressed() 
     background(200)
-TempVariableGummy = round(random(.6,5.4))
+TempVariableGummy = round(random(1,34,1))
 
-TempVariableSticky = round(random(.6,5.4))
+TempVariableSticky = round(random(1,34,1))
 
 fill(Blueish)
 
-  text("I want a " ..(SizeText[TempVariableSticky]).. " pizza with " ..(PizzaToppingsKey[TempVariableGummy]).. " please.",width/4, height/2)
+  text("Imagine, if you will, a " ..(ArthropodsExtended[TempVariableSticky]).. ", that's incredibly " ..(AdjectivesArray[TempVariableGummy]).. ".",width/4, height/2)
 
 
 --Messy code for tracking the results that crashes
