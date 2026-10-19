@@ -31,7 +31,7 @@ PhylumsArrayText = {"Mollusca", "Echinodermata", "Vertebrata", "Arthropoda"}
 PhylumsArrayNested = {MolluscaExtended, EchinodermsExtended, VertebratesExtended, ArthropodsExtended}
 
 MolluscaExtended = {"Whelk", "Snail", "Slug",  "Squid", "Octopus", "Shellfish", "Oyster", "Scallop"}
-EchinodermsExtended = {"Sea Star", "Brittle Star", "Urchin", "Sea Cucumber", "Sand Dollar", "Sea Lilly", "Feather Star",}
+EchinodermsExtended = {"Sea Star", "Brittle Star", "Urchin", "Sea Cucumber", "Sand Dollar", "Sea Lilly", "Feather Star"}
 VertebratesExtended = {"Frog", "Toad", "Shark", "Elephant", "Deer", "Lion", "Anteater", "Gecko", "Owl", 
 "Mouse", "Turkey", "Human", "Trout", "Salmon", "Bear", "Wolf", "Dog", "Cat", "Rabbit", "Squirrel", "Vulture", "Condor", "Pidgeon"}
 ArthropodsExtended = {"Ant", "Termite", "Spider", "Centipede", "Milipede", "Scorpion", "Beetle", "Fly", 
